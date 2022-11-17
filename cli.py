@@ -15,6 +15,8 @@ def cli(filename):
         path = r'C:\Users\Likhitha.Katta\OneDrive - Unilever\Documents\NPD INPUT FILES'
     elif os.environ['COMPUTERNAME'] == 'UNIWINJQR0WZ2':
         path = 'c:\\1'
+    if os.environ['COMPUTERNAME'] == 'DESKTOP-HHS1FHQ':
+        path = r'C:\Users\likhitha katta\Documents\UNILEVER PROJECTS'
     else:
         path = r'\\S2.ms.unilever.com\dfs\ES-GROUPS\cor\frd\UFO-General\INTERFACE\S1P'
 
@@ -25,4 +27,5 @@ def cli(filename):
 
 
 if __name__ == "__main__":
-    cli()
+    filename='UFO_NPD_BOT_ROUTING.20220510062351.340619.00CBM6tN.S1P.csv'
+    cli(filename)
